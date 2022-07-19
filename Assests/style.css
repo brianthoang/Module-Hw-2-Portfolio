@@ -1,0 +1,156 @@
+body {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
+
+/* Header Section */
+header {
+    padding: 40px;
+    text-align: center;
+    background:darkolivegreen;
+    color: black;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .profile{
+    padding: 10px 15px; 
+     
+  }
+
+  .message{
+    padding: 10px;
+  }
+
+/*Navigation Bar Section*/
+nav {
+    display: flex;
+    background-color: #d8a47f;
+    align-content: center;
+  }
+  
+  nav a {
+    color: #13293d;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  nav a:hover {
+    background-color: #fff;
+  }
+
+/* Body Section */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .body {
+    flex: 70%;
+    background-color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly
+  }
+
+  .fact{
+    font-size: 25px;
+    border:4px solid black; 
+    padding: 40px
+  }
+
+  .achieve{
+    font-size: 25px;
+    border: 4px solid black;  
+    padding: 40px 80px; 
+    margin-top: 40px; 
+  }
+
+  .projects{
+    font-size: 25px;
+    border: 4px solid black; 
+    padding: 40px;
+    margin-top: 40px;
+  }
+  .movement {
+    text-align: center;
+
+  }
+
+  .book {
+    text-align: center;
+  }
+
+  .milk {
+    text-align: center;
+  }
+ /*Footer Section  */
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background: darkolivegreen;
+    color: black;
+    margin-top: auto;
+  }
+
+  h3{
+    flex-wrap: wrap;
+  }
+  
+  @media screen and (max-width: 768px) {
+    header,
+    h1 {
+      font-size: 45px;
+    }
+    main,
+    nav {
+      flex-direction: column;
+      font-size: 45px;
+    }
+    body {
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width:1024px) {
+    main,
+    nav{
+      flex-direction: column; 
+    }
+    body {
+      flex-direction: column; 
+    }
+  }
+  @media screen and (max-width:2560px) {
+    header,
+    h1 {
+      font-size: 50px;
+    }
+    nav{
+      font-size: 40px;
+      justify-content: space-evenly;
+    }
+    .reasons{
+      flex-wrap: wrap;
+    }
+    .achieve {
+      margin-top: 3px;
+    }
+    .projects {
+      margin-top: 3px;
+    }
+ }
